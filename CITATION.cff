@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this toolkit, please cite it using this metadata."
+title: "Binance Quant Toolkit"
+type: software
+authors:
+  - family-names: "Barredo Lago"
+    given-names: "Carlos"
+repository-code: "https://github.com/carlosbarredo/binance-quant-trading"
+url: "https://github.com/carlosbarredo/binance-quant-trading"
+license: Apache-2.0
+version: 1.0.0
+date-released: 2026-08-30
+

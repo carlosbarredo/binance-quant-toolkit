@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qinvia-binance-quant-toolkit"
+version = "1.0.0"
+description = "Research-grade Binance Spot and derivatives public market-data toolkit"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [{name = "Carlos Barredo Lago"}]
+keywords = ["binance", "cryptocurrency", "market-data", "quantitative-finance", "research"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Financial and Insurance Industry",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "requests>=2.31",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5", "ruff>=0.6"]
+notebook = ["jupyterlab>=4", "matplotlib>=3.8"]
+parquet = ["pyarrow>=14"]
+stream = ["websockets>=12"]
+all = ["jupyterlab>=4", "matplotlib>=3.8", "pyarrow>=14", "websockets>=12"]
+
+[project.scripts]
+bqt = "binance_quant_toolkit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
