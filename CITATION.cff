@@ -5,8 +5,8 @@ type: software
 authors:
   - family-names: "Barredo Lago"
     given-names: "Carlos"
-repository-code: "https://github.com/carlosbarredo/binance-quant-trading"
-url: "https://github.com/carlosbarredo/binance-quant-trading"
+repository-code: "https://github.com/carlosbarredo/binance-quant-toolkit"
+url: "https://github.com/carlosbarredo/binance-quant-toolkit"
 license: Apache-2.0
 version: 1.0.0
 date-released: 2026-08-30

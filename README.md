@@ -207,7 +207,7 @@ tests/                       Network-free unit and behavioural tests
 examples/                    Offline sample, bundle download and local-book lesson
 notebooks/                   Short bilingual learning notebooks
 docs/                        Data choice, methodology, order book and research recipes
-.github/workflows/           Tests and lint on supported Python versions
+.github/workflows/           inactive template for explicitly approved one-off checks
 ```
 
 ## Reproduce
@@ -235,4 +235,6 @@ rebuilds the implementation around explicit contracts and reproducible inputs.
 See [`CHANGELOG.md`](CHANGELOG.md) and [`CITATION.cff`](CITATION.cff).
 Apache-2.0 applies to the repository code and documentation. Binance is a
 third-party service and is not affiliated with this project.
+
+GitHub Actions is intentionally disabled by default. This repository is a public distribution and archival surface; routine verification runs locally.
 

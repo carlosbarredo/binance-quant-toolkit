@@ -199,7 +199,7 @@ tests/                       Pruebas sin red
 examples/                    Muestra, bundle y lección de order book
 notebooks/                   Recorrido breve y bilingüe
 docs/                        Elección, método, order book y recetas
-.github/workflows/           Tests y lint automáticos
+.github/workflows/           plantilla inactiva para comprobaciones puntuales autorizadas
 ```
 
 ## Reproducir
@@ -223,4 +223,6 @@ La versión 1.0 conserva la intención didáctica y rehace toda la implementaci�
 
 Consulta [`CHANGELOG.md`](CHANGELOG.md) y [`CITATION.cff`](CITATION.cff).
 Licencia Apache-2.0. Binance es un servicio externo no afiliado al proyecto.
+
+GitHub Actions está desactivado por defecto. Este repositorio funciona como escaparate público y archivo; la verificación habitual se ejecuta localmente.
 
